@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Assignment</title>
+</head>
+<body>
+<h1>Arithmetic Calculations in Java Script </h1>
+<table>
+<tr>
+<td>Number1:</td>
+<td><input type="text" id="textNum1Id" value="" onchange="changeNum1()"></td>
+</tr>
+<tr>
+<td>Number2:</td>
+<td><input type="text" id="textNum2Id" value="" onchange="changeNum2()"></td>
+</tr>
+
+
+</table>
+<button type="button" onclick="add()">Add</button>
+<button type="button" onclick="sub()">Sub</button>
+<button type="button" onclick="div()">Div</button>
+<button type="button" onclick="mul()">Mul</button>
+<p id="firstParaId"></p>
+
+<script>
+var num1;
+var num2;
+var result
+
+function changeNum1()
+{num1=document.getElementById("textNum1Id").value; }
+function changeNum2()
+{num2=document.getElementById("textNum2Id").value; }
+
+function add(){
+ result= Number(num1) + Number(num2);
+ document.getElementById("firstParaId").innerHTML=  num1 + '+'+  num2 +'='+ result;
+}
+
+function sub(){
+result= Number(num1) - Number(num2);
+document.getElementById("firstParaId").innerHTML= num1 + '-' +num2 +'='+ result;
+}
+
+function div(){
+result= Number(num1) / Number(num2);
+document.getElementById("firstParaId").innerHTML= num1 + '/' +num2 +'='+ result;
+}
+
+function mul(){
+result= Number(num1) * Number(num2);
+document.getElementById("firstParaId").innerHTML= num1 + '*'+ num2 +'='+ result;
+}
+
+</script>
+
+</body>
+</html>
