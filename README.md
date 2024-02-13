@@ -1,2 +1,2 @@
 # calculator
-It is a basic calculator using html (1st yr assignment)
+It is a basic calculator using html and JS (1st yr assignment)
